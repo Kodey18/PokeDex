@@ -1,0 +1,25 @@
+.main-container{
+    position: relative;
+    overflow: hidden;
+    max-width: 100vw;
+    height: 100vh;
+}
+
+.app{
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(12, 14, 23, 0.714);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    border: 1px solid rgba(23, 20, 20, 0.7);
+    display: grid;
+    grid-template-rows: 10vh auto 10vh;/*  Here by this css property the .app classname div is divided into 3 rows first and last row with 10vh heighht and the middle row with auto height means whatever the left height will be there.  */
+    grid-template-columns: 1fr;
+    .content{
+        margin: 0 5rem;
+        border: 0.5px solid rgba(255, 255, 255, 0.38);
+        border-top: none;
+        border-bottom: none;
+    }
+}
